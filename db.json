@@ -11,8 +11,41 @@
       "username": "garcom",
       "password": "123",
       "role": "staff"
+    },
+    {
+      "id": "84f3",
+      "username": "erickfb2002@gmail.com",
+      "password": "123456",
+      "role": "cliente",
+      "nome": "erick",
+      "email": "erickfb2002@gmail.com"
     }
   ],
-  "pizzas": [],
+  "pizzas": [
+    {
+      "id": "4f39",
+      "nome": "pizza",
+      "ingredientes": [
+        "queijo",
+        "etc",
+        "etc"
+      ],
+      "preco": 30,
+      "tamanho": "Média",
+      "imagem": "https://acarnequeomundoprefere.com.br/uploads/media/image/33-11-24.png"
+    },
+    {
+      "id": "f6e4",
+      "nome": "pizza promoção",
+      "ingredientes": [
+        "calabresa",
+        "cebola",
+        "etc"
+      ],
+      "preco": 50,
+      "tamanho": "Pequena",
+      "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHYWxT198YXKWPnv5wWybC13EMrmimrcUOVQ&s"
+    }
+  ],
   "pedidos": []
 }

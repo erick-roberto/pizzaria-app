@@ -14,7 +14,8 @@ export default function Cardapio() {
   };
 
   return (
-    <div className="cardapio-lista">
+    <div style={{padding: 20}}>
+      <h2>Cardápio</h2>
       {pizzas.map((pizza) => (
         <PizzaCard key={pizza.id} pizza={pizza} onAdd={handleAdd} />
       ))}

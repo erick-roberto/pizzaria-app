@@ -37,7 +37,7 @@ export default function Header() {
             style={{ width: 40, height: 40, marginRight: 10 }}
           />
           <Typography variant="h6" noWrap component="div">
-            Pizzaria App
+            Pizzeria
           </Typography>
         </Box>
 

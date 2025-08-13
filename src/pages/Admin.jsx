@@ -24,13 +24,21 @@ export default function Admin() {
   };
 
   return (
-    <div style={{ padding: 20 }}>
+    <div style={{ padding: 20 }} className="admin-container">
       <h2>Gerenciar Cardápio</h2>
 
       <input placeholder="Nome" value={novaPizza.nome} onChange={(e) => setNovaPizza({ ...novaPizza, nome: e.target.value })} />
       <input placeholder="Ingredientes (separados por vírgula)" value={novaPizza.ingredientes} onChange={(e) => setNovaPizza({ ...novaPizza, ingredientes: e.target.value })} />
-      <input placeholder="Preço" type="number" value={novaPizza.preco} onChange={(e) => setNovaPizza({ ...novaPizza, preco: parseFloat(e.target.value) })} />
-      <input placeholder="Tamanho" value={novaPizza.tamanho} onChange={(e) => setNovaPizza({ ...novaPizza, tamanho: e.target.value })} />
+      Preço:
+      <input placeholder="Preço" type="number" min="0" value={novaPizza.preco} onChange={(e) => setNovaPizza({ ...novaPizza, preco: parseFloat(e.target.value) })} />
+      Tamanho:
+      <label>
+        <select value={novaPizza.tamanho} onChange={(e) => setNovaPizza({ ...novaPizza, tamanho: e.target.value })}>
+          <option value="Pequena">Pequena</option>
+          <option value="Média">Média</option>
+          <option value="Grande">Grande</option>
+        </select> 
+      </label>
       <input placeholder="URL da imagem" value={novaPizza.imagem} onChange={(e) => setNovaPizza({ ...novaPizza, imagem: e.target.value })} />
       <button onClick={adicionarPizza}>Adicionar Pizza</button>
 
