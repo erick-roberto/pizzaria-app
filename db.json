@@ -45,6 +45,30 @@
       "preco": 50,
       "tamanho": "Pequena",
       "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHYWxT198YXKWPnv5wWybC13EMrmimrcUOVQ&s"
+    },
+    {
+      "id": "4bd0",
+      "nome": "pizza grande",
+      "ingredientes": [
+        "massa",
+        "queijo",
+        "etc"
+      ],
+      "preco": 50,
+      "tamanho": "Grande",
+      "imagem": "https://www.minhareceita.com.br/app/uploads/2022/12/pizza-de-pepperoni-caseira-portal-minha-receita.jpg"
+    },
+    {
+      "id": "1bc3",
+      "nome": "Pizza pequena",
+      "ingredientes": [
+        "Queijo",
+        "etc",
+        "etc"
+      ],
+      "preco": 45,
+      "tamanho": "Média",
+      "imagem": "https://static.itdg.com.br/images/360-240/47d6583c93d77edac5244cab67ba660b/253447-378226756-original.jpg"
     }
   ],
   "pedidos": []

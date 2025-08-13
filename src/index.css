@@ -265,3 +265,31 @@ html, body, #root {
   color: red;
 }
 
+.pizzas-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.pizzas-grid > * {
+  background: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsivo: em telas menores, fica 1 ou 2 colunas */
+@media (max-width: 900px) {
+  .pizzas-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .pizzas-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
