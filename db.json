@@ -51,6 +51,14 @@
       "role": "cliente",
       "nome": "erick",
       "email": "erick@email.com"
+    },
+    {
+      "id": "1202",
+      "username": "marcelo@email.com",
+      "password": "123123",
+      "role": "cliente",
+      "nome": "marcelo",
+      "email": "marcelo@email.com"
     }
   ],
   "pizzas": [
@@ -215,8 +223,65 @@
       ],
       "total": 50,
       "mesaOuEndereco": "4",
-      "status": "Em preparo",
+      "status": "Pronto",
       "createdAt": "2025-08-14T00:30:27.808Z"
+    },
+    {
+      "id": "42dc",
+      "itens": [
+        {
+          "id": "4f39",
+          "nome": "pizza",
+          "ingredientes": [
+            "queijo",
+            "etc",
+            "etc"
+          ],
+          "preco": 30,
+          "tamanho": "Média",
+          "imagem": "https://acarnequeomundoprefere.com.br/uploads/media/image/33-11-24.png",
+          "quantity": 1
+        }
+      ],
+      "total": 30,
+      "mesaOuEndereco": "mesa 2",
+      "status": "Pronto",
+      "createdAt": "2025-08-14T00:44:49.221Z"
+    },
+    {
+      "id": "f2a7",
+      "itens": [
+        {
+          "id": "4f39",
+          "nome": "pizza",
+          "ingredientes": [
+            "queijo",
+            "etc",
+            "etc"
+          ],
+          "preco": 30,
+          "tamanho": "Média",
+          "imagem": "https://acarnequeomundoprefere.com.br/uploads/media/image/33-11-24.png",
+          "quantity": 1
+        },
+        {
+          "id": "f6e4",
+          "nome": "pizza promoção",
+          "ingredientes": [
+            "calabresa",
+            "cebola",
+            "etc"
+          ],
+          "preco": 50,
+          "tamanho": "Pequena",
+          "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHYWxT198YXKWPnv5wWybC13EMrmimrcUOVQ&s",
+          "quantity": 1
+        }
+      ],
+      "total": 80,
+      "mesaOuEndereco": "mesa 120",
+      "status": "Em preparo",
+      "createdAt": "2025-08-14T03:30:45.509Z"
     }
   ]
 }
