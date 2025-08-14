@@ -7,6 +7,7 @@ import Entregas from "../pages/Entregas";
 import Admin from "../pages/Admin";
 import NotFound from "../pages/NotFound";
 import ProtectedRoute from "./ProtectedRoute";
+import Carrinho from "../pages/Carrinho";
 
 export default function AppRoutes() {
   return (
@@ -41,6 +42,15 @@ export default function AppRoutes() {
         element={
           <ProtectedRoute roles={["admin"]}>
             <Admin />
+          </ProtectedRoute>
+        }
+      />
+
+      <Route
+        path="/carrinho"
+        element={
+          <ProtectedRoute roles={["cliente"]}>
+            <Carrinho />
           </ProtectedRoute>
         }
       />

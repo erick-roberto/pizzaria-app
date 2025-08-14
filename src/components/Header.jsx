@@ -13,7 +13,6 @@ export default function Header() {
     navigate("/");
   };
 
-  // Se estiver na raiz (login), link para "/", senão para "/cardapio"
   const logoLink = location.pathname === "/" ? "/" : "/cardapio";
 
   return (
@@ -35,6 +34,7 @@ export default function Header() {
             src="/imagens/logo.png"
             alt="Logo Pizzaria"
             style={{ width: 40, height: 40, marginRight: 10 }}
+            className="logo-redonda"
           />
           <Typography variant="h6" noWrap component="div">
             Pizzeria
@@ -43,10 +43,20 @@ export default function Header() {
 
         {user && (
           <>
-            <Button color="inherit" component={Link} to="/cardapio">
-              Cardápio
-            </Button>
-            {["staff", "admin"].includes(user.role) && (
+            {/* Cliente */}
+            {user.role === "cliente" && (
+            <>
+              <Button color="inherit" component={Link} to="/cardapio">
+                Cardápio
+              </Button>
+              <Button color="inherit" component={Link} to="/carrinho">
+                Carrinho
+              </Button>
+            </>
+            )}
+
+            {/* Staff */}
+            {user.role === "staff" && (
               <>
                 <Button color="inherit" component={Link} to="/cozinha">
                   Cozinha
@@ -56,11 +66,23 @@ export default function Header() {
                 </Button>
               </>
             )}
+
+            {/* Admin */}
             {user.role === "admin" && (
-              <Button color="inherit" component={Link} to="/admin">
-                Admin
-              </Button>
+              <>
+                <Button color="inherit" component={Link} to="/admin">
+                  Admin
+                </Button>
+                <Button color="inherit" component={Link} to="/cozinha">
+                  Cozinha
+                </Button>
+                <Button color="inherit" component={Link} to="/entregas">
+                  Entregas
+                </Button>
+              </>
             )}
+
+            {/* Botão comum a todos */}
             <Button color="inherit" onClick={handleLogout}>
               Sair
             </Button>

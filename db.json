@@ -19,6 +19,38 @@
       "role": "cliente",
       "nome": "erick",
       "email": "erickfb2002@gmail.com"
+    },
+    {
+      "id": "0bfd",
+      "username": "erps.snf24@uea.edu.br",
+      "password": "123456",
+      "role": "cliente",
+      "nome": "Erick Roberto",
+      "email": "erps.snf24@uea.edu.br"
+    },
+    {
+      "id": "c15f",
+      "username": "marcelo123@gmail.com",
+      "password": "1234567",
+      "role": "cliente",
+      "nome": "Marcelo",
+      "email": "marcelo123@gmail.com"
+    },
+    {
+      "id": "30c1",
+      "username": "carlos123@gmail.com",
+      "password": "123456",
+      "role": "cliente",
+      "nome": "Carlos Silva",
+      "email": "carlos123@gmail.com"
+    },
+    {
+      "id": "37cd",
+      "username": "erick@email.com",
+      "password": "123456",
+      "role": "cliente",
+      "nome": "erick",
+      "email": "erick@email.com"
     }
   ],
   "pizzas": [
@@ -71,5 +103,120 @@
       "imagem": "https://static.itdg.com.br/images/360-240/47d6583c93d77edac5244cab67ba660b/253447-378226756-original.jpg"
     }
   ],
-  "pedidos": []
+  "pedidos": [
+    {
+      "id": "0142",
+      "itens": [
+        {
+          "id": "4f39",
+          "nome": "pizza",
+          "ingredientes": [
+            "queijo",
+            "etc",
+            "etc"
+          ],
+          "preco": 30,
+          "tamanho": "Média",
+          "imagem": "https://acarnequeomundoprefere.com.br/uploads/media/image/33-11-24.png",
+          "quantity": 1
+        },
+        {
+          "id": "4bd0",
+          "nome": "pizza grande",
+          "ingredientes": [
+            "massa",
+            "queijo",
+            "etc"
+          ],
+          "preco": 50,
+          "tamanho": "Grande",
+          "imagem": "https://www.minhareceita.com.br/app/uploads/2022/12/pizza-de-pepperoni-caseira-portal-minha-receita.jpg",
+          "quantity": 2
+        }
+      ],
+      "total": 130,
+      "mesaOuEndereco": "2",
+      "status": "Pronto",
+      "createdAt": "2025-08-14T00:06:12.938Z"
+    },
+    {
+      "id": "015f",
+      "itens": [
+        {
+          "id": "4f39",
+          "nome": "pizza",
+          "ingredientes": [
+            "queijo",
+            "etc",
+            "etc"
+          ],
+          "preco": 30,
+          "tamanho": "Média",
+          "imagem": "https://acarnequeomundoprefere.com.br/uploads/media/image/33-11-24.png",
+          "quantity": 2
+        },
+        {
+          "id": "f6e4",
+          "nome": "pizza promoção",
+          "ingredientes": [
+            "calabresa",
+            "cebola",
+            "etc"
+          ],
+          "preco": 50,
+          "tamanho": "Pequena",
+          "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHYWxT198YXKWPnv5wWybC13EMrmimrcUOVQ&s",
+          "quantity": 1
+        }
+      ],
+      "total": 110,
+      "mesaOuEndereco": "mesa 2",
+      "status": "Pronto",
+      "createdAt": "2025-08-14T00:27:38.665Z"
+    },
+    {
+      "id": "dc64",
+      "itens": [
+        {
+          "id": "4f39",
+          "nome": "pizza",
+          "ingredientes": [
+            "queijo",
+            "etc",
+            "etc"
+          ],
+          "preco": 30,
+          "tamanho": "Média",
+          "imagem": "https://acarnequeomundoprefere.com.br/uploads/media/image/33-11-24.png",
+          "quantity": 1
+        }
+      ],
+      "total": 30,
+      "mesaOuEndereco": "2",
+      "status": "Pronto",
+      "createdAt": "2025-08-14T00:30:14.328Z"
+    },
+    {
+      "id": "37e1",
+      "itens": [
+        {
+          "id": "4bd0",
+          "nome": "pizza grande",
+          "ingredientes": [
+            "massa",
+            "queijo",
+            "etc"
+          ],
+          "preco": 50,
+          "tamanho": "Grande",
+          "imagem": "https://www.minhareceita.com.br/app/uploads/2022/12/pizza-de-pepperoni-caseira-portal-minha-receita.jpg",
+          "quantity": 1
+        }
+      ],
+      "total": 50,
+      "mesaOuEndereco": "4",
+      "status": "Em preparo",
+      "createdAt": "2025-08-14T00:30:27.808Z"
+    }
+  ]
 }

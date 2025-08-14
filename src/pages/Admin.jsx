@@ -2,11 +2,14 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 
 export default function Admin() {
-  const [pizzas, setPizzas] = useState([]);
+  const [pizzas, setPizzas] = useState([]); // array que armazenas as pizzas do cardápio
   const [novaPizza, setNovaPizza] = useState({ nome: "", ingredientes: "", preco: 0, tamanho: "Média", imagem: "" });
+  // objeto temporário que armazena as informações da pizza que será adicionada
 
+  // busca as pizzas BackEnd
   useEffect(() => {
     axios.get("http://localhost:5000/pizzas").then(res => setPizzas(res.data));
+    // faz uma requisição get para o backend e pega todas as pizzas
   }, []);
 
   const adicionarPizza = () => {

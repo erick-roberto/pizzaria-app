@@ -1,20 +1,24 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
 import axios from "axios";
 import PizzaCard from "../components/PizzaCard";
-import "../index.css"; // garante que o CSS global seja carregado
+import "../index.css";
+import { CartContext } from "../context/CartContext";
 
 export default function Cardapio() {
   const [pizzas, setPizzas] = useState([]);
+  const { addToCart } = useContext(CartContext); // <- useContext aqui
+
+  // Função para adicionar pizza ao carrinho
+  const handleAdd = (pizza) => {
+    addToCart(pizza);
+    alert(`Pizza ${pizza.nome} adicionada ao carrinho!`);
+  };
 
   useEffect(() => {
     axios.get("http://localhost:5000/pizzas")
       .then((res) => setPizzas(res.data))
       .catch((err) => console.error("Erro ao buscar pizzas:", err));
   }, []);
-
-  const handleAdd = (pizza) => {
-    alert(`Pizza ${pizza.nome} adicionada ao carrinho`);
-  };
 
   return (
     <div>
