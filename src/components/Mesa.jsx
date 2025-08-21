@@ -32,7 +32,7 @@ export default function Mesa() {
       />
       <input
         type="number"
-        placeholder="10% opcional"
+        placeholder="Taxa opcional"
         value={taxa}
         onChange={(e) => setTaxa(e.target.value)}
       />

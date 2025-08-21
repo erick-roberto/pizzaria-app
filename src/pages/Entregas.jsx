@@ -1,29 +1,35 @@
-import { useEffect, useState } from "react";
-import axios from "axios";
+import { useContext } from "react";
+import { PedidosContext } from "../context/PedidosProvider";
+import { Box, Card, CardContent, Typography, Grid } from "@mui/material";
 
 export default function Entregas() {
-  const [pedidos, setPedidos] = useState([]);
-
-  useEffect(() => {
-    axios.get("http://localhost:5000/pedidos?status=pronto")
-      .then(res => setPedidos(res.data));
-  }, []);
-
-  const finalizarEntrega = (id) => {
-    axios.patch(`http://localhost:5000/pedidos/${id}`, { status: "entregue" })
-      .then(() => setPedidos(pedidos.filter(p => p.id !== id)));
-  };
+  const { entrega } = useContext(PedidosContext);
 
   return (
-    <div style={{ padding: 20 }}>
-      <h2>Pedidos prontos</h2>
-      {pedidos.map(p => (
-        <div key={p.id} style={{ border: "1px solid #ccc", margin: 10, padding: 10 }}>
-          <p><b>Mesa/Endereço:</b> {p.mesa || p.endereco}</p>
-          <p><b>Pizzas:</b> {p.itens.map(i => i.nome).join(", ")}</p>
-          <button onClick={() => finalizarEntrega(p.id)}>Entregar</button>
-        </div>
-      ))}
-    </div>
+    <Box sx={{ p: 3 }}>
+      <Typography variant="h4" gutterBottom>Pedidos prontos para entrega</Typography>
+
+      {entrega.length === 0 && <Typography>Nenhum pedido para entregar.</Typography>}
+
+      <Grid container spacing={2}>
+        {entrega.map(p => (
+          <Grid item xs={12} sm={6} md={4} key={p.id}>
+            <Card variant="outlined">
+              <CardContent>
+                <Typography variant="h6">
+                  Mesa/Endereço: {p.mesaOuEndereco}
+                </Typography>
+                <Typography variant="body1" sx={{ mt: 1 }}>
+                  {p.itens.map(i => `${i.nome} (x${i.quantity})`).join(", ")}
+                </Typography>
+                <Typography variant="subtitle1" sx={{ mt: 1 }}>
+                  Total: R$ {p.total}
+                </Typography>
+              </CardContent>
+            </Card>
+          </Grid>
+        ))}
+      </Grid>
+    </Box>
   );
 }

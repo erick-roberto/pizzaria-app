@@ -7,13 +7,26 @@ import CustomizationPanel from "../components/CustomizationPanel";
 
 export default function Checkout() {
   return (
-    <div className="checkout-page p-4">
+    <div className="checkout-page p-4 flex flex-col gap-6">
+
+      {/* Painel de customização (admin) */}
       <CustomizationPanel />
+
+      {/* Dados do cliente */}
       <Cliente />
+
+      {/* Dados da entrega */}
       <Entrega />
+
+      {/* Mesa e garçom */}
       <Mesa />
+
+      {/* Promoção */}
       <Promocao />
+
+      {/* Carrinho com todos os itens e totais */}
       <Cart />
+
     </div>
   );
 }

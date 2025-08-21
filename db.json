@@ -280,8 +280,201 @@
       ],
       "total": 80,
       "mesaOuEndereco": "mesa 120",
-      "status": "Em preparo",
+      "status": "Pronto",
       "createdAt": "2025-08-14T03:30:45.509Z"
+    },
+    {
+      "id": "e26d",
+      "itens": [
+        {
+          "id": "4f39",
+          "nome": "pizza",
+          "ingredientes": [
+            "queijo",
+            "etc",
+            "etc"
+          ],
+          "preco": 30,
+          "tamanho": "Média",
+          "imagem": "https://acarnequeomundoprefere.com.br/uploads/media/image/33-11-24.png",
+          "quantity": 1
+        }
+      ],
+      "total": 30,
+      "mesaOuEndereco": "mesa 2",
+      "status": "Pronto",
+      "createdAt": "2025-08-16T22:07:23.397Z"
+    },
+    {
+      "id": "f32c",
+      "itens": [
+        {
+          "id": "4f39",
+          "nome": "pizza",
+          "ingredientes": [
+            "queijo",
+            "etc",
+            "etc"
+          ],
+          "preco": 30,
+          "tamanho": "Média",
+          "imagem": "https://acarnequeomundoprefere.com.br/uploads/media/image/33-11-24.png",
+          "quantity": 2
+        }
+      ],
+      "total": 60,
+      "mesaOuEndereco": "mesa 2",
+      "status": "Pronto",
+      "createdAt": "2025-08-21T02:24:11.844Z"
+    },
+    {
+      "id": "3214",
+      "itens": [
+        {
+          "id": "4f39",
+          "nome": "pizza",
+          "ingredientes": [
+            "queijo",
+            "etc",
+            "etc"
+          ],
+          "preco": 30,
+          "tamanho": "Média",
+          "imagem": "https://acarnequeomundoprefere.com.br/uploads/media/image/33-11-24.png",
+          "quantity": 1
+        },
+        {
+          "id": "f6e4",
+          "nome": "pizza promoção",
+          "ingredientes": [
+            "calabresa",
+            "cebola",
+            "etc"
+          ],
+          "preco": 50,
+          "tamanho": "Pequena",
+          "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHYWxT198YXKWPnv5wWybC13EMrmimrcUOVQ&s",
+          "quantity": 1
+        }
+      ],
+      "total": 80,
+      "mesaOuEndereco": "mesa 3",
+      "status": "Pronto",
+      "createdAt": "2025-08-21T02:30:22.095Z"
+    },
+    {
+      "id": "39ff",
+      "itens": [
+        {
+          "id": "f6e4",
+          "nome": "pizza promoção",
+          "ingredientes": [
+            "calabresa",
+            "cebola",
+            "etc"
+          ],
+          "preco": 50,
+          "tamanho": "Pequena",
+          "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHYWxT198YXKWPnv5wWybC13EMrmimrcUOVQ&s",
+          "quantity": 1
+        }
+      ],
+      "total": 50,
+      "mesaOuEndereco": "mesa 50",
+      "status": "Em preparo",
+      "createdAt": "2025-08-21T02:36:45.016Z"
+    },
+    {
+      "id": "5d5f",
+      "itens": [
+        {
+          "id": "4f39",
+          "nome": "pizza",
+          "ingredientes": [
+            "queijo",
+            "etc",
+            "etc"
+          ],
+          "preco": 30,
+          "tamanho": "Média",
+          "imagem": "https://acarnequeomundoprefere.com.br/uploads/media/image/33-11-24.png",
+          "quantity": 1
+        },
+        {
+          "id": "f6e4",
+          "nome": "pizza promoção",
+          "ingredientes": [
+            "calabresa",
+            "cebola",
+            "etc"
+          ],
+          "preco": 50,
+          "tamanho": "Pequena",
+          "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHYWxT198YXKWPnv5wWybC13EMrmimrcUOVQ&s",
+          "quantity": 1
+        }
+      ],
+      "total": 80,
+      "mesaOuEndereco": "mesa 50",
+      "status": "Em preparo",
+      "createdAt": "2025-08-21T02:40:34.236Z"
+    },
+    {
+      "id": "0ab3",
+      "itens": [
+        {
+          "id": "4bd0",
+          "nome": "pizza grande",
+          "ingredientes": [
+            "massa",
+            "queijo",
+            "etc"
+          ],
+          "preco": 50,
+          "tamanho": "Grande",
+          "imagem": "https://www.minhareceita.com.br/app/uploads/2022/12/pizza-de-pepperoni-caseira-portal-minha-receita.jpg",
+          "quantity": 1
+        },
+        {
+          "id": "f6e4",
+          "nome": "pizza promoção",
+          "ingredientes": [
+            "calabresa",
+            "cebola",
+            "etc"
+          ],
+          "preco": 50,
+          "tamanho": "Pequena",
+          "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHYWxT198YXKWPnv5wWybC13EMrmimrcUOVQ&s",
+          "quantity": 1
+        }
+      ],
+      "total": 100,
+      "mesaOuEndereco": "mesa 50",
+      "status": "Em preparo",
+      "createdAt": "2025-08-21T02:42:44.075Z"
+    },
+    {
+      "id": "cd15",
+      "itens": [
+        {
+          "id": "f6e4",
+          "nome": "pizza promoção",
+          "ingredientes": [
+            "calabresa",
+            "cebola",
+            "etc"
+          ],
+          "preco": 50,
+          "tamanho": "Pequena",
+          "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHYWxT198YXKWPnv5wWybC13EMrmimrcUOVQ&s",
+          "quantity": 1
+        }
+      ],
+      "total": 50,
+      "mesaOuEndereco": "mesa 30",
+      "status": "Em preparo",
+      "createdAt": "2025-08-21T02:47:38.230Z"
     }
   ]
 }
