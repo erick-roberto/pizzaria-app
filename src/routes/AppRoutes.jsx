@@ -1,18 +1,20 @@
-// Importa componentes de roteamento do React Router
 import { Routes, Route } from "react-router-dom";
 
-// Importa todas as páginas da aplicação
+// Páginas existentes
 import Login from "../pages/Login";
-import CadastroCliente from "../pages/CadastroCliente";  // Página de cadastro
+import CadastroCliente from "../pages/CadastroCliente";
 import Cardapio from "../pages/Cardapio";
 import Cozinha from "../pages/Cozinha";
 import Entregas from "../pages/Entregas";
 import Admin from "../pages/Admin";
 import NotFound from "../pages/NotFound";
-import ProtectedRoute from "./ProtectedRoute"; // Componente para proteger rotas por role
 import Carrinho from "../pages/Carrinho";
 
-// Componente que define todas as rotas da aplicação
+// Nova página de checkout
+import Checkout from "../pages/Checkout";
+
+import ProtectedRoute from "./ProtectedRoute"; 
+
 export default function AppRoutes() {
   return (
     <Routes>
@@ -53,11 +55,21 @@ export default function AppRoutes() {
         }
       />
 
+      {/* Carrinho e Checkout: somente clientes */}
       <Route
         path="/carrinho"
         element={
           <ProtectedRoute roles={["cliente"]}>
             <Carrinho />
+          </ProtectedRoute>
+        }
+      />
+
+      <Route
+        path="/checkout"
+        element={
+          <ProtectedRoute roles={["cliente"]}>
+            <Checkout />
           </ProtectedRoute>
         }
       />
